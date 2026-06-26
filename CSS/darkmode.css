@@ -1,0 +1,50 @@
+/* ============================================================
+   dark-mode.css — Dark mode overrides
+   Activated by adding class="dark-mode" to <body>
+   Wired up in Section B via ui.js / dark mode toggle
+   ============================================================ */
+
+/* ---------- Section B: Dark Mode Implementation ---------- */
+/*
+  TODO (Section B):
+  - Toggle `dark-mode` class on <body> when #darkModeToggle is clicked
+  - Persist preference to localStorage
+  - Restore preference on page load
+  - Update toggle icon (moon ↔ sun)
+*/
+
+body.dark-mode {
+  --color-bg:              #121009;
+  --color-surface:         #1a1814;
+  --color-surface-alt:     #201d19;
+  --color-border:          #2c2926;
+  --color-text-primary:    #f0ede8;
+  --color-text-secondary:  #9a9590;
+  --color-text-muted:      #6b6660;
+  --color-accent-light:    #2a1510;
+  --color-header-bg:       #0e0c0a;
+  --color-header-text:     #f0ede8;
+  --shadow-card:           0 2px 8px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-card-hover:     0 12px 32px rgba(0,0,0,0.5), 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .card-image-wrap {
+  background-color: #201d19;
+}
+
+body.dark-mode .product-card:hover {
+  border-color: #3d3830;
+}
+
+body.dark-mode .site-footer {
+  background-color: #0e0c0a;
+}
+
+body.dark-mode .hero {
+  border-bottom-color: #2c2926;
+}
+
+body.dark-mode .skeleton-card {
+  background-color: #1a1814;
+  border-color: #2c2926;
+}

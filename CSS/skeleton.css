@@ -1,0 +1,149 @@
+/* ============================================================
+   skeleton.css — Skeleton card styles + shimmer animation
+   ============================================================ */
+
+/* ---------- Shimmer Keyframe ---------- */
+@keyframes shimmer {
+  0% {
+    background-position: -600px 0;
+  }
+  100% {
+    background-position: 600px 0;
+  }
+}
+
+/* ---------- Shimmer Mixin (applied via class) ---------- */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #ede9e3 0px,
+    #f5f2ee 40%,
+    #ede9e3 80%
+  );
+  background-size: 600px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 4px;
+}
+
+/* ---------- Skeleton Card ---------- */
+.skeleton-card {
+  background-color: #ffffff;
+  border: 1px solid #e8e4dd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Image placeholder — same aspect ratio as real card */
+.skeleton-image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+/* Body area */
+.skeleton-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+/* Category badge placeholder */
+.skeleton-badge {
+  height: 20px;
+  width: 72px;
+  border-radius: 999px;
+}
+
+/* Title lines */
+.skeleton-title-line {
+  height: 14px;
+}
+
+.skeleton-title-line:nth-child(1) {
+  width: 90%;
+}
+
+.skeleton-title-line:nth-child(2) {
+  width: 65%;
+}
+
+/* Stars row */
+.skeleton-stars {
+  height: 12px;
+  width: 100px;
+}
+
+/* Footer row: price + button */
+.skeleton-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.skeleton-price {
+  height: 22px;
+  width: 64px;
+  border-radius: 4px;
+}
+
+.skeleton-btn {
+  height: 34px;
+  width: 100px;
+  border-radius: 6px;
+}
+
+/* Staggered fade-in delay so skeletons feel alive */
+.skeleton-card:nth-child(1) .shimmer { animation-delay: 0ms; }
+.skeleton-card:nth-child(2) .shimmer { animation-delay: 80ms; }
+.skeleton-card:nth-child(3) .shimmer { animation-delay: 160ms; }
+.skeleton-card:nth-child(4) .shimmer { animation-delay: 240ms; }
+.skeleton-card:nth-child(5) .shimmer { animation-delay: 320ms; }
+.skeleton-card:nth-child(6) .shimmer { animation-delay: 400ms; }
+
+/* ---------- Dark-mode override ---------- */
+@media (prefers-color-scheme: dark) {
+  @keyframes shimmer-dark {
+    0%   { background-position: -600px 0; }
+    100% { background-position:  600px 0; }
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      #2c2926 0px,
+      #38342f 40%,
+      #2c2926 80%
+    );
+    background-size: 600px 100%;
+    animation-name: shimmer-dark;
+  }
+
+  .skeleton-card {
+    background-color: #1f1c19;
+    border-color: #2c2926;
+  }
+}
+
+/* Class-based dark mode (toggled by js) */
+body.dark-mode .shimmer {
+  background: linear-gradient(
+    90deg,
+    #2c2926 0px,
+    #38342f 40%,
+    #2c2926 80%
+  );
+  background-size: 600px 100%;
+}
+
+body.dark-mode .skeleton-card {
+  background-color: #1f1c19;
+  border-color: #2c2926;
+}
