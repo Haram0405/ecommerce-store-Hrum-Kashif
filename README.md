@@ -1,4 +1,4 @@
-# 🛍️ Storefront – E-Commerce Store
+# Storefront – E-Commerce Store 🛍️
 
 ## 📖Project Description
 
