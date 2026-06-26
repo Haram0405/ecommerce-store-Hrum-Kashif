@@ -45,15 +45,18 @@ https://your-live-demo-link.com
 
 ### Desktop View🖥️
 
-> Insert desktop screenshot here.
+> <img width="1346" height="639" alt="image" src="https://github.com/user-attachments/assets/a27f949f-6ca5-445b-8d94-9f7f20b569d0" />
+
 
 ### Mobile View📱
 
-> Insert mobile screenshot here.
+> <img width="255" height="519" alt="image" src="https://github.com/user-attachments/assets/caa827a7-1199-4276-ad33-d9ef06717288" />
+
 
 ### Cart Drawer🛒
 
-> Insert cart drawer screenshot here.
+> <img width="1365" height="642" alt="image" src="https://github.com/user-attachments/assets/140ad5ca-f9d7-4425-b8f3-709521de8d38" />
+
 
 ---
 
