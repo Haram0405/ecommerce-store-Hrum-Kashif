@@ -94,4 +94,4 @@ This project helped me improve my frontend development skills by building a comp
 ## 🎥Video Walkthrough
 
 **Video Link:**  
-https://www.loom.com/share/ba376b6a949941bea981b19a3225fb0f
+https://www.loom.com/share/0a63784c992d408895516da452ff2532
